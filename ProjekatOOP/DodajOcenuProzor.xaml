@@ -1,0 +1,24 @@
+﻿<Window x:Class="ProjekatOOP.DodajOcenuProzor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatOOP"
+        mc:Ignorable="d"
+        Title="Dodaj Ocenu" Height="300" Width="200"> 
+    <Grid>
+        <StackPanel>
+            <Label Content="Izaberi Predmet" Margin="50, 0, 50, 0"/>
+            <ComboBox x:Name ="cmbPredmet" HorizontalAlignment="Left" Margin="50,0,50,0" VerticalAlignment="Top"  Width="100"/>
+            <Label Content="Unesi Ocenu" Margin="50, 0, 50, 0"/>
+            <TextBox Name="txtOcena" Margin="50, 0, 50, 0"/>
+            <Label Content="Izaberi odeljenje" Margin="50, 0, 50, 0"/>
+            <ComboBox x:Name ="cmbOdeljenje" HorizontalAlignment="Left" Margin="50,0,50,0" VerticalAlignment="Top"  Width="100"/>
+            <Label Content="Izaberi Ucenika" Margin="50, 0, 50, 0"/>
+            <ComboBox x:Name ="cmbUcenik" HorizontalAlignment="Left" Margin="50,0,50,0" VerticalAlignment="Top"  Width="100"/> 
+            <Label Content="Izaberi Profesora" Margin="50, 0, 50, 0"/>
+            <ComboBox x:Name ="cmbProfesor" HorizontalAlignment="Left" Margin="50,0,50,0" VerticalAlignment="Top"  Width="100"/>
+            <Button Content="Dodaj" Click="btnDodaj_Click" Margin="50, 25, 50, 50"/>
+        </StackPanel>
+    </Grid>
+</Window>

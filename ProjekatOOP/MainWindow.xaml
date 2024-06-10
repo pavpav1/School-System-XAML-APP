@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProjekatOOP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatOOP"
+        mc:Ignorable="d"
+        Title="Skola" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
+            <Button Name="btnPrikaziProfesore" Content="Prikazi profesore" Click="btnPrikaziProfesore_Click" Margin="5"/>
+            <Button Name="btnPrikaziPredmete" Content="Prikazi predmete" Click="btnPrikaziPredmete_Click" Margin="5"/>
+            <Button Name="btnPrikaziUcenike" Content="Prikazi ucenike" Click="btnPrikaziUcenike_Click" Margin="5"/>
+            <Button Name="btnPrikaziDnevnik" Content="Prikazi dnevnik" Click="btnPrikaziDnevnik_Click" Margin="5"/>
+            <Button Name="btnDodaj" Content="Dodaj" 
+              Click="btnDodaj_Click" Margin="5"/>
+        </StackPanel>
+        <DataGrid Name="dataGridCentralni" Margin="10,50,10,10" AutoGenerateColumns="True"/>
+    </Grid>
+</Window>
